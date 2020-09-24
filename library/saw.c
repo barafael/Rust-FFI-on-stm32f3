@@ -4,7 +4,7 @@ int counter = SAW_MIN;
 
 count_direction_t direction = UP;
 
-int saw() {
+uint32_t saw() {
     switch (direction) {
         case UP:
             if (counter >= SAW_MAX) {
@@ -21,6 +21,10 @@ int saw() {
             } else {
                 return counter--;
             }
+        default:
+            counter = SAW_MIN;
+            direction = UP;
+            return counter;
     }
 }
 

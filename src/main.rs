@@ -3,9 +3,8 @@
 
 use aux5::{entry, prelude::*, Delay, Leds};
 
-extern "C" {
-    fn saw() -> u32;
-}
+/* Include the automatically generated bindings */
+include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
 #[entry]
 fn main() -> ! {

@@ -13,6 +13,10 @@ cortex-m-rt = "0.6.10"
 cortex-m-semihosting = "0.3.3"
 panic-halt = "0.2.0"
 
+[build-dependencies]
+bindgen = "0.50.0"
+cc = "1.0.37"
+
 # Uncomment for the panic example.
 # panic-itm = "0.4.1"
 
