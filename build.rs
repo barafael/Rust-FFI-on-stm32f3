@@ -20,6 +20,9 @@ fn main() {
         .generate_comments(true)
         // Output bindings for builtin definitions, e.g. __builtin_va_list
         .emit_builtins()
+        .clang_arg("-mcpu=cortex-m4")
+        .clang_arg("-mthumb")
+        .clang_arg("-mfloat-abi=hard")
         .ctypes_prefix("libc")
         .use_core()
         .raw_line("#[no_std]")
