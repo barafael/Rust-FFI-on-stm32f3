@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define SAW_MIN 25
+#define SAW_MIN 5
 #define SAW_MAX 50
 
 typedef enum count_direction_e {
