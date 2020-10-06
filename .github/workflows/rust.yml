@@ -17,4 +17,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run:  export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update -y && sudo apt-get install -y gcc-arm-none-eabi llvm && rustup target add thumbv7em-none-eabihf && cargo build --verbose
+      run:  export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update -y && sudo apt-get install -y gcc-arm-none-eabi build-essential llvm && rustup target add thumbv7em-none-eabihf && cargo build --verbose
